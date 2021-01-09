@@ -1,8 +1,8 @@
 import numpy as np
 import tensorflow as tf
-from core.config import cfg
-from utils.group_normalization import group_norm
-from utils.sync_bn import sync_batch_norm
+from lib.core.config import cfg
+from lib.utils.group_normalization import group_norm
+from lib.utils.sync_bn import sync_batch_norm
 
 def _variable_on_cpu(name, shape, initializer, use_fp16=False):
   """Helper to create a Variable stored on CPU memory.

@@ -1,5 +1,5 @@
 import tensorflow as tf
-from tensorflow.contrib.nccl.ops import gen_nccl_ops
+from tensorflow.python.ops.nccl_ops import gen_nccl_ops
 from tensorflow.contrib.framework import add_model_variable
 
 

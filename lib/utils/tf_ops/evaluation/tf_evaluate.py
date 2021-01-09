@@ -4,7 +4,7 @@ import sys
 import os
 BASE_DIR = os.path.dirname(__file__)
 sys.path.append(BASE_DIR)
-evaluate_module=tf.load_op_library(os.path.join(BASE_DIR, 'tf_evaluate_so.so'))
+evaluate_module = tf.load_op_library(os.path.join(BASE_DIR, 'tf_evaluate_so.so'))
 
 def evaluate(detections, names, numlist):
     '''

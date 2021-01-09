@@ -7,9 +7,9 @@ import os
 import sys
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(BASE_DIR)
-import utils.tf_util as tf_util
+import lib.utils.tf_util as tf_util
 
-from core.config import cfg
+from lib.core.config import cfg
 
 # -----------------
 # Global Constants

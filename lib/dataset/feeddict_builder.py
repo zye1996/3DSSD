@@ -1,8 +1,8 @@
 import tensorflow
 import numpy as np
 
-from core.config import cfg
-from dataset import maps_dict
+from lib.core.config import cfg
+from lib.dataset import maps_dict
 
 class FeedDictCreater:
     def __init__(self, dataset_iter, model_list, batch_size):

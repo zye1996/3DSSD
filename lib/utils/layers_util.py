@@ -1,12 +1,12 @@
 import tensorflow as tf
 import numpy as np
-import utils.tf_util as tf_util
-import utils.model_util as model_util
+import lib.utils.tf_util as tf_util
+import lib.utils.model_util as model_util
 
-from utils.tf_ops.grouping.tf_grouping import *
-from utils.tf_ops.sampling.tf_sampling import *
-from utils.tf_ops.interpolation.tf_interpolate import *
-from core.config import cfg
+from lib.utils.tf_ops.grouping.tf_grouping import *
+from lib.utils.tf_ops.sampling.tf_sampling import *
+from lib.utils.tf_ops.interpolation.tf_interpolate import *
+from lib.core.config import cfg
 
 
 def vote_layer(xyz, points, mlp_list, is_training, bn_decay, bn, scope):

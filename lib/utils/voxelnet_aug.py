@@ -1,10 +1,10 @@
 import numpy as np
 import numba
 
-from core.config import cfg
+from lib.core.config import cfg
 
-from utils.box_3d_utils import get_box3d_corners_helper_np
-from utils.rotation_util import rotate_points, symmetric_rotate_points, roty
+from lib.utils.box_3d_utils import get_box3d_corners_helper_np
+from lib.utils.rotation_util import rotate_points, symmetric_rotate_points, roty
 
 def noise_per_object_v3_(gt_boxes,
                          points=None,

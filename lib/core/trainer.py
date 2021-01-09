@@ -7,16 +7,16 @@ import importlib
 import datetime
 import time
 
-import dataset.maps_dict as maps_dict
+import lib.dataset.maps_dict as maps_dict
 
 from tensorflow.python import pywrap_tensorflow
 from tensorflow.python.client import device_lib as _device_lib
 
-from core.config import cfg, cfg_from_file, cfg_from_list, assert_and_infer_cfg
-from core.trainer_utils import *
-from dataset.dataloader import choose_dataset
-from dataset.feeddict_builder import FeedDictCreater
-from modeling import choose_model
+from lib.core.config import cfg, cfg_from_file, cfg_from_list, assert_and_infer_cfg
+from lib.core.trainer_utils import *
+from lib.dataset.dataloader import choose_dataset
+from lib.dataset.feeddict_builder import FeedDictCreater
+from lib.modeling import choose_model
 
 
 def parse_args():

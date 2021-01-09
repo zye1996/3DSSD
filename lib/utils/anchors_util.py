@@ -1,10 +1,10 @@
 import tensorflow as tf
 import numpy as np
 
-import utils.kitti_util as kitti_util
-from utils.box_3d_utils import *
-from core.config import cfg
-import utils.anchor_encoder as anchor_encoder
+import lib.utils.kitti_util as kitti_util
+from lib.utils.box_3d_utils import *
+from lib.core.config import cfg
+import lib.utils.anchor_encoder as anchor_encoder
 
 
 ############ Project label_anchors to bev_anchors ##############

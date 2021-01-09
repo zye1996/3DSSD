@@ -1,9 +1,9 @@
 import numpy as np
 import tensorflow as tf
-from core.config import cfg
+from lib.core.config import cfg
 
-import utils.generate_anchors as generate_anchors
-from utils.model_util import g_type_mean_size 
+import lib.utils.generate_anchors as generate_anchors
+from lib.utils.model_util import g_type_mean_size
 
 class Anchors:
     def __init__(self, stage, class_list):

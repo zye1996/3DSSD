@@ -1,7 +1,7 @@
 import numpy as np
 
-from core.config import cfg
-from builder.voxel_generator.point_cloud_ops import points_to_voxel, points_to_voxel_nusc
+from lib.core.config import cfg
+from lib.builder.voxel_generator.point_cloud_ops import points_to_voxel, points_to_voxel_nusc
 
 
 class VoxelGenerator:

@@ -1,11 +1,11 @@
 import tensorflow as tf
 import numpy as np
 
-from core.config import cfg
-from utils.head_util import *
+from lib.core.config import cfg
+from lib.utils.head_util import *
 from functools import partial
 
-import dataset.maps_dict as maps_dict
+import lib.dataset.maps_dict as maps_dict
 
 
 class HeadBuilder:

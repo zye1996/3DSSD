@@ -5,7 +5,7 @@ import os
 
 # debugging
 import numpy as np
-from core.config import cfg
+from lib.core.config import cfg
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(BASE_DIR)

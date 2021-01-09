@@ -9,8 +9,8 @@ import os
 import sys
 import numpy as np
 import cv2
-import utils.kitti_util as utils
-from core.config import cfg
+import lib.utils.kitti_util as utils
+from lib.core.config import cfg
 
 try:
     raw_input          # Python 2

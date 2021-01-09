@@ -1,7 +1,7 @@
 import copy
 
 import numpy as np
-from utils.rotation_util import *
+from lib.utils.rotation_util import *
 
 
 def flip_image(image):

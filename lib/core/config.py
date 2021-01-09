@@ -12,7 +12,7 @@ from ast import literal_eval
 import numpy as np
 import yaml
 
-from utils.collections import AttrDict
+from lib.utils.collections import AttrDict
 
 __C = AttrDict()
 # Consumers can get config by:

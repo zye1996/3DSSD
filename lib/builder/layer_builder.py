@@ -1,12 +1,12 @@
 import tensorflow as tf
 import numpy as np
 
-import utils.tf_util as tf_util
+import lib.utils.tf_util as tf_util
 
-from core.config import cfg
-from utils.layers_util import *
+from lib.core.config import cfg
+from lib.utils.layers_util import *
 
-import dataset.maps_dict as maps_dict
+import lib.dataset.maps_dict as maps_dict
 
 class LayerBuilder:
     def __init__(self, layer_idx, is_training, layer_cfg):

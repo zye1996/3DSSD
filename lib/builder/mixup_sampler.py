@@ -4,7 +4,7 @@ import numpy as np
 import cv2
 import itertools
 
-from core.config import cfg
+from lib.core.config import cfg
 
 class MixupSampler:
     def __init__(self, shuffle=True):
@@ -62,6 +62,6 @@ class MixupSampler:
             for idx in indices:
                 cur_npy_file = self.sv_npy_list[cls][idx]
                 cur_npy_file = os.path.join(self.sv_npy_cls_path[cls], cur_npy_file)
-                mat = np.load(cur_npy_file).tolist()
+                mat = np.load(cur_npy_file, allow_pickle=True).tolist()
                 return_dicts.append(mat)
         return return_dicts

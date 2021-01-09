@@ -1,6 +1,6 @@
 import tensorflow as tf
 import numpy as np
-import utils.tf_util as tf_util
+import lib.utils.tf_util as tf_util
 
 def align_channel_network(info, mlp_list, bn, is_training, bn_decay, scope):
     with tf.variable_scope(scope) as sc:

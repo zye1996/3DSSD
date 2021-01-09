@@ -1,10 +1,10 @@
 import numpy as np
 import tensorflow as tf
 
-from core.config import cfg
-from utils.tf_ops.grouping.tf_grouping import group_point, query_points_iou
-from utils.tf_ops.evaluation.tf_evaluate import calc_iou
-import np_functions.gt_sampler as gt_sampler
+from lib.core.config import cfg
+from lib.utils.tf_ops.grouping.tf_grouping import group_point, query_points_iou
+from lib.utils.tf_ops.evaluation.tf_evaluate import calc_iou
+import lib.np_functions.gt_sampler as gt_sampler
 
 class TargetAssigner:
     def __init__(self, stage):

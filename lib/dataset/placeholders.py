@@ -1,8 +1,8 @@
 import tensorflow as tf 
 import numpy as np
 
-from core.config import cfg
-from dataset import maps_dict
+from lib.core.config import cfg
+from lib.dataset import maps_dict
 
 class PlaceHolders:
     def __init__(self, batch_size):

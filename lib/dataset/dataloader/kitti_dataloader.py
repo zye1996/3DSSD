@@ -5,20 +5,20 @@ import cv2
 import itertools
 import tqdm
 
-import utils.kitti_object as kitti_object
-import utils.kitti_util as kitti_util
-import utils.box_3d_utils as box_3d_utils
-import dataset.maps_dict as maps_dict
+import lib.utils.kitti_object as kitti_object
+import lib.utils.kitti_util as kitti_util
+import lib.utils.box_3d_utils as box_3d_utils
+import lib.dataset.maps_dict as maps_dict
 
-from core.config import cfg
-from builder.data_augmentor import DataAugmentor
-from utils.anchor_encoder import encode_angle2class_np
-from utils.points_filter import * 
-from utils.voxelnet_aug import check_inside_points
-from utils.anchors_util import project_to_image_space_corners
-from utils.tf_ops.evaluation.tf_evaluate import evaluate, calc_iou
-from dataset.data_provider.data_provider import DataFromList, MultiProcessMapData, BatchDataNuscenes
-from dataset.dataloader.dataloader import Dataset
+from lib.core.config import cfg
+from lib.builder.data_augmentor import DataAugmentor
+from lib.utils.anchor_encoder import encode_angle2class_np
+from lib.utils.points_filter import *
+from lib.utils.voxelnet_aug import check_inside_points
+from lib.utils.anchors_util import project_to_image_space_corners
+from lib.utils.tf_ops.evaluation.tf_evaluate import evaluate, calc_iou
+from lib.dataset.data_provider.data_provider import DataFromList, MultiProcessMapData, BatchDataNuscenes
+from lib.dataset.dataloader.dataloader import Dataset
 
 class KittiDataset(Dataset):
     """
@@ -107,7 +107,7 @@ class KittiDataset(Dataset):
         cur_npy = self.train_npy_list[sample_idx]
        
         cur_npy_path = os.path.join(self.sv_npy_path, cur_npy)
-        sample_dict = np.load(cur_npy_path).tolist()
+        sample_dict = np.load(cur_npy_path, allow_pickle=True).tolist()
 
         sem_labels = sample_dict[maps_dict.KEY_LABEL_SEMSEG]
         sem_dists = sample_dict[maps_dict.KEY_LABEL_DIST]

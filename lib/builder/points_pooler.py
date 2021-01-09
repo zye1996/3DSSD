@@ -1,11 +1,11 @@
 import tensorflow as tf
 import numpy as np
 
-from core.config import cfg
-from utils.tf_ops.grouping.tf_grouping import query_boxes_3d_points, group_point, query_boxes_3d_mask
-from utils.tf_ops.points_pooling.points_pooling import points_pooling
-from utils.rotation_util import rotate_points
-from utils.pool_utils import *
+from lib.core.config import cfg
+from lib.utils.tf_ops.grouping.tf_grouping import query_boxes_3d_points, group_point, query_boxes_3d_mask
+from lib.utils.tf_ops.points_pooling.points_pooling import points_pooling
+from lib.utils.rotation_util import rotate_points
+from lib.utils.pool_utils import *
 
 class PointsPooler:
     def __init__(self, pool_cfg):

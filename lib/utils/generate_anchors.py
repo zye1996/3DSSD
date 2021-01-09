@@ -1,7 +1,7 @@
 import tensorflow as tf
 import numpy as np
 
-from core.config import cfg
+from lib.core.config import cfg
 
 def generate_3d_anchors_by_point(points, anchor_sizes):
     '''

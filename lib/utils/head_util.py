@@ -1,10 +1,10 @@
 import tensorflow as tf
 import numpy as np
-import utils.tf_util as tf_util
-import dataset.maps_dict as maps_dict
+import lib.utils.tf_util as tf_util
+import lib.dataset.maps_dict as maps_dict
 
 from functools import partial
-from core.config import cfg
+from lib.core.config import cfg
 
 def select_conv_op(op_type):
     if op_type == 'conv1d': # conv1d function

@@ -1,22 +1,22 @@
 import numpy as np
 import tensorflow as tf
 
-from core.config import cfg
-from builder.anchor_builder import Anchors
-from builder.target_assigner import TargetAssigner
-from builder.layer_builder import LayerBuilder
-from dataset.placeholders import PlaceHolders
-from modeling.head_builder import HeadBuilder 
-from builder.encoder_builder import EncoderDecoder
-from builder.postprocessor import PostProcessor
-from builder.loss_builder import LossBuilder
-from builder.points_pooler import PointsPooler
-from builder.sampler import Sampler
+from lib.core.config import cfg
+from lib.builder.anchor_builder import Anchors
+from lib.builder.target_assigner import TargetAssigner
+from lib.builder.layer_builder import LayerBuilder
+from lib.dataset.placeholders import PlaceHolders
+from lib.modeling.head_builder import HeadBuilder 
+from lib.builder.encoder_builder import EncoderDecoder
+from lib.builder.postprocessor import PostProcessor
+from lib.builder.loss_builder import LossBuilder
+from lib.builder.points_pooler import PointsPooler
+from lib.builder.sampler import Sampler
 
-from utils.box_3d_utils import transfer_box3d_to_corners 
-from utils.model_util import *
+from lib.utils.box_3d_utils import transfer_box3d_to_corners 
+from lib.utils.model_util import *
 
-import dataset.maps_dict as maps_dict
+import lib.dataset.maps_dict as maps_dict
 
 class DoubleStageDetector:
     def __init__(self, batch_size, is_training):

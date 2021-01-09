@@ -1,9 +1,9 @@
 import numpy as np
 
-from core.config import cfg
+from lib.core.config import cfg
 
-import utils.tf_ops.nms.cython_nms as cython_nms
-from utils.voxelnet_aug import check_inside_points
+import lib.utils.tf_ops.nms.cython_nms as cython_nms
+from lib.utils.voxelnet_aug import check_inside_points
 
 def iou_guided_nms(iou_matrix, pred_boxes_3d, pred_scores, pred_iou_3d, iou_thresh):
     """ Calculate iou guided nms, using IoU 2d and IoU 3d to guide NMS

@@ -2,9 +2,9 @@ import tensorflow as tf
 import numpy as np
 from functools import partial
 
-from core.config import cfg
-from utils.anchor_encoder import *
-from utils.anchor_decoder import *
+from lib.core.config import cfg
+from lib.utils.anchor_encoder import *
+from lib.utils.anchor_decoder import *
 
 class EncoderDecoder:
     def __init__(self, stage):

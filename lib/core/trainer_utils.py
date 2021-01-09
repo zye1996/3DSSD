@@ -2,7 +2,7 @@ import tensorflow as tf
 import numpy as np
 
 from tensorflow.python import pywrap_tensorflow
-from core.config import cfg
+from lib.core.config import cfg
 
 def get_learning_rate(batch):
     steps = cfg.SOLVER.STEPS
